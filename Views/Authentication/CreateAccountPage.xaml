@@ -5,50 +5,51 @@
 
     <ScrollView>
         <VerticalStackLayout
-    Padding="30,0"
-    Spacing="25">
+        Padding="30,0"
+        Spacing="25">
             <ImageButton
-        x:Name="btnBack"
-        Source="back_icon.svg"
-        BackgroundColor="Transparent"
-        WidthRequest="50"
-        HeightRequest="50"
-        Margin="-15,20,0,0"
-        HorizontalOptions="Start"
-        VerticalOptions="Center" 
-        Grid.Column="1"
-        Clicked="BackToPreviousPage"/>
+            x:Name="btnBack"
+            Source="back_icon.svg"
+            BackgroundColor="Transparent"
+            WidthRequest="50"
+            HeightRequest="50"
+            Margin="-15,20,0,0"
+            HorizontalOptions="Start"
+            VerticalOptions="Center" 
+            Grid.Column="1"
+            Clicked="BackToPreviousPage"/>
             <Image
-        Source="createaccount_image.png"
-        HeightRequest="185"
-        Aspect="AspectFit"
-        Margin="-10,-10,-10,-10"/>
+            Source="createaccount_image.png"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            Margin="-10,-10,-10,-10"/>
 
             <Frame 
-        CornerRadius="20"
-        BorderColor="GhostWhite"
-        Padding="0"
-        HeightRequest="50"
-        HasShadow="True"
-        BackgroundColor="GhostWhite">
+            CornerRadius="20"
+            BorderColor="GhostWhite"
+            Padding="0"
+            HeightRequest="50"
+            HasShadow="True"
+            BackgroundColor="GhostWhite">
 
                 <Grid ColumnSpacing="10" Padding="15,0">
 
                     <Image 
-                Source="email_icon.png" 
-                VerticalOptions="Center"
-                WidthRequest="25"
-                HeightRequest="25"
-                Grid.Column="0" />
+                    Source="email_icon.png" 
+                    VerticalOptions="Center"
+                    WidthRequest="25"
+                    HeightRequest="25"
+                    Grid.Column="0" />
 
                     <Entry 
-                x:Name="txtboxEmail"
-                Placeholder="UM Email"
-                BackgroundColor="Transparent"
-                FontAttributes="Bold"
-                TextColor="Black"
-                PlaceholderColor="Gray"
-                Grid.Column="1"/>
+                    x:Name="txtboxEmail"
+                    Placeholder="UM Email"
+                    BackgroundColor="Transparent"
+                    FontAttributes="Bold"
+                    TextColor="Black"
+                    PlaceholderColor="Gray"
+                    Grid.Column="1"
+                    Visual="Default"/>
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -59,43 +60,44 @@
             </Frame>
 
             <Frame 
-        CornerRadius="20"
-        BorderColor="GhostWhite"
-        Padding="0"
-        HeightRequest="50"
-        HasShadow="True"
-        BackgroundColor="GhostWhite">
+            CornerRadius="20"
+            BorderColor="GhostWhite"
+            Padding="0"
+            HeightRequest="50"
+            HasShadow="True"
+            BackgroundColor="GhostWhite">
 
                 <Grid ColumnSpacing="10" Padding="15,0">
 
                     <Image 
-                Source="password_icon.png" 
-                VerticalOptions="Center"
-                WidthRequest="25"
-                HeightRequest="25"
-                Grid.Column="0" />
+                    Source="password_icon.png" 
+                    VerticalOptions="Center"
+                    WidthRequest="25"
+                    HeightRequest="25"
+                    Grid.Column="0" />
 
                     <Entry 
-                x:Name="txtboxPassword"
-                TextChanged="OnPasswordTextChanged"
-                FontAttributes="Bold"
-                IsPassword="True"
-                Placeholder="Password"
-                BackgroundColor="Transparent"
-                TextColor="Black"
-                PlaceholderColor="Gray"
-                Grid.Column="1"/>
+                    x:Name="txtboxPassword"
+                    TextChanged="OnPasswordTextChanged"
+                    FontAttributes="Bold"
+                    IsPassword="True"
+                    Placeholder="Password"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    PlaceholderColor="Gray"
+                    Grid.Column="1"
+                    Visual="Default"/>
 
                     <ImageButton
-                x:Name="btnPasswordEye"
-                Source="eyeclosed.png"
-                BackgroundColor="Transparent"
-                WidthRequest="25"
-                HeightRequest="25"
-                HorizontalOptions="End"
-                VerticalOptions="Center" 
-                Grid.Column="2"
-                Clicked="TogglePasswordVisibility"/>
+                    x:Name="btnPasswordEye"
+                    Source="eyeclosed.png"
+                    BackgroundColor="Transparent"
+                    WidthRequest="25"
+                    HeightRequest="25"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center" 
+                    Grid.Column="2"
+                    Clicked="TogglePasswordVisibility"/>
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -106,43 +108,44 @@
             </Frame>
 
             <Frame 
-        CornerRadius="20"
-        BorderColor="GhostWhite"
-        Padding="0"
-        HeightRequest="50"
-        HasShadow="True"
-        BackgroundColor="GhostWhite">
+            CornerRadius="20"
+            BorderColor="GhostWhite"
+            Padding="0"
+            HeightRequest="50"
+            HasShadow="True"
+            BackgroundColor="GhostWhite">
 
                 <Grid ColumnSpacing="10" Padding="15,0">
 
                     <Image 
-                Source="confirmpassword_icon.png" 
-                VerticalOptions="Center"
-                WidthRequest="25"
-                HeightRequest="25"
-                Grid.Column="0" />
+                    Source="confirmpassword_icon.png" 
+                    VerticalOptions="Center"
+                    WidthRequest="25"
+                    HeightRequest="25"
+                    Grid.Column="0" />
 
                     <Entry 
-                x:Name="txtboxConfirmPassword"
-                TextChanged="OnPasswordTextChanged"
-                IsPassword="True"
-                FontAttributes="Bold"
-                Placeholder="Confirm Password"
-                BackgroundColor="Transparent"
-                TextColor="Black"
-                PlaceholderColor="Gray"
-                Grid.Column="1"/>
+                    x:Name="txtboxConfirmPassword"
+                    TextChanged="OnPasswordTextChanged"
+                    IsPassword="True"
+                    FontAttributes="Bold"
+                    Placeholder="Confirm Password"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    PlaceholderColor="Gray"
+                    Grid.Column="1"
+                    Visual="Material"/>
 
                     <ImageButton
-                x:Name="btnConfirmPasswordEye"
-                Source="eyeclosed.png"
-                BackgroundColor="Transparent"
-                WidthRequest="25"
-                HeightRequest="25"
-                HorizontalOptions="End"
-                VerticalOptions="Center"
-                Grid.Column="2" 
-                Clicked="ToggleConfirmPasswordVisibility"/>
+                    x:Name="btnConfirmPasswordEye"
+                    Source="eyeclosed.png"
+                    BackgroundColor="Transparent"
+                    WidthRequest="25"
+                    HeightRequest="25"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    Grid.Column="2" 
+                    Clicked="ToggleConfirmPasswordVisibility"/>
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -153,8 +156,8 @@
             </Frame>
 
             <HorizontalStackLayout
-        Spacing="10"
-        Margin="18,-18,0,0">
+            Spacing="10"
+            Margin="18,-18,0,0">
                 <Image
                 x:Name="iconStatus"
                 Source="dissaproveicon.png"
@@ -172,19 +175,19 @@
             </HorizontalStackLayout>
 
             <Button
-        x:Name="btnSignUp"
-        IsEnabled="False"   
-        Text="Sign Up"
-        FontAttributes="Bold"
-        FontSize="16"
-        BackgroundColor="LightPink"
-        TextColor="White"
-        CornerRadius="25"
-        HorizontalOptions="Center"
-        WidthRequest="200"
-        HeightRequest="50" 
-        Margin="0,55,0,0"
-        Clicked="SignUpButton"/>
+            x:Name="btnSignUp"
+            IsEnabled="False"   
+            Text="Sign Up"
+            FontAttributes="Bold"
+            FontSize="16"
+            BackgroundColor="LightPink"
+            TextColor="White"
+            CornerRadius="25"
+            HorizontalOptions="Center"
+            WidthRequest="200"
+            HeightRequest="50" 
+            Margin="0,55,0,0"
+            Clicked="SignUpButton"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
